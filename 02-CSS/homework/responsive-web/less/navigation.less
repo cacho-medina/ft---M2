@@ -1,1 +1,25 @@
 // Código de Nav acá
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: whitesmoke;
+    height: 100px;
+    .nav__title {
+        font-size: 4rem;
+    }
+    .nav__links {
+        cursor: pointer;
+        font-size: 1.5rem;
+        gap: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @media @phone {
+            width: 90%;
+        }
+    }
+}

@@ -1,1 +1,19 @@
 // Mixins acá
+.btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+.boton(@bgcolor, @color) {
+    .btn;
+    background-color: @bgcolor;
+    color: @color;
+    border: 1px solid @header-font-color;
+    &:hover {
+        background-color: whitesmoke;
+        color: @header-font-color;
+        border: 1px solid @header-font-color;
+        font-family: "courier";
+    }
+}
